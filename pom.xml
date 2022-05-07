@@ -70,11 +70,11 @@
 	</dependencies>
 	
 	
-	   <distributionManagement>
-    <snapshotRepository>
-        <id>artifactory</id>
-	     <url>http://34.228.254.159:8082/artifactory/msk-snpahot</url>
-    </snapshotRepository>
+	 <distributionManagement>
+  <snapshotRepository>
+    <id>nexus</id>
+    <url>http://ec2-54-221-15-185.compute-1.amazonaws.com:8081/nexus/content/repositories/snapshots</url>
+  </snapshotRepository>
 </distributionManagement>
 		
 	
@@ -159,7 +159,7 @@
    </executions>
    <configuration>
       <serverId>nexus</serverId>
-      <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
+      <nexusUrl>http://ec2-54-221-15-185.compute-1.amazonaws.com:8081/</nexusUrl>
       <skipStaging>true</skipStaging>
    </configuration>
 </plugin>
