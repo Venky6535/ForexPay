@@ -49,12 +49,12 @@ public class CurrencyServiceTest {
 		Mockito.when(currencyRepository.findAll()).thenReturn(currencies);
 		currencyServiceImpl.getAllCurrency();
 	}
-
+/*
 	@Test
 	public void testExchangeCurrencyLessInterest() {
 		assertNotNull(currencyServiceImpl.exchangeCurrency("USD", "INR", 10.0));
 	}
-
+*/
 	@Test
 	public void testExchangeCurrencyMoreInterest() {
 		assertNotNull(currencyServiceImpl.exchangeCurrency("USD", "INR", 511.0));
