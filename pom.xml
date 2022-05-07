@@ -70,11 +70,18 @@
 	</dependencies>
 	
 	
-	 <distributionManagement>
+	<!-- <distributionManagement>
   <snapshotRepository>
     <id>nexus</id>
     <url>http://ec2-54-221-15-185.compute-1.amazonaws.com:8081/nexus/content/repositories/snapshots</url>
   </snapshotRepository>
+</distributionManagement> -->
+	
+	<distributionManagement>
+  <repository>
+    <id>nexus</id>
+    <url>http://ec2-54-221-15-185.compute-1.amazonaws.com:8081/nexus/content/repositories/releases</url>
+  </repository>
 </distributionManagement>
 		
 	
